@@ -1,28 +1,19 @@
 import { MainMenuContainer } from "../styles/MainMenuContainer";
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Route,
-  Link,
-} from "react-router-dom";
+import { BrowserRouter, Link } from 'react-router-dom';
 
 export const MainMenu = () => {
-    const router = createBrowserRouter([
-        {
-          path: "/",
-          element: (
-            <MainMenuContainer>
-                <ul>
-                    <Link to="">
-                        <li>Home</li>
-                    </Link>
-                </ul>
-            </MainMenuContainer>
-          ),
-        }
-    ])
-
     return(
-        <RouterProvider router={router} />
+        <MainMenuContainer>
+          <nav>
+            <ul>
+              <li>
+                <a href="/">Home </a>
+              </li>
+              <li>
+                <a href="/about">Sobre</a>
+              </li>
+            </ul>
+          </nav>
+        </MainMenuContainer>
     )
 };

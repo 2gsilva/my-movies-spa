@@ -9,5 +9,8 @@ ul{
         display: inline-block;
         padding-right: 10px;
     }
+    a:link{
+        text-decoration: none;
+    }
 }
 `
