@@ -1,7 +1,7 @@
 import { Header } from './components/Header';
 import './App.css';
 import React from "react";
-import {Rotas} from "./confs/Rotas"
+import {Rotas} from "./routes/Rotas"
 
 function App() {
 
