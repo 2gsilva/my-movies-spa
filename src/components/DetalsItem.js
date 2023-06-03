@@ -12,7 +12,6 @@ export const DetailsItem = ({id}) => {
     useEffect(() => {
         fetchMovies();
       }, []);
-      console.log(movies);
     return(
         <div>
             <h1>Detalhes</h1>
