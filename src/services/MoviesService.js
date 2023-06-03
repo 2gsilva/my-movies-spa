@@ -8,7 +8,7 @@ export class MoviesService{
         return axios(request('?s=simpsons&apikey=87940e02'))
     }
 
-    static getMovieById(){
-        return axios(request('?i=&apikey=87940e02'))
+    static getMovieById(id){
+        return axios(request(`?i=${id}&apikey=87940e02`))
     }
 }
